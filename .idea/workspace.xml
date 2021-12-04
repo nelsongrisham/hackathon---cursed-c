@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="29d0d40a-d98d-4e7e-9388-bc20f60928a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="" />
-    <list id="0630bcd2-11d9-4f08-aef7-5f78dacad27f" name="Changes by tomas" comment="">
       <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" afterDir="false" />
     </list>
+    <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="" />
+    <list id="0630bcd2-11d9-4f08-aef7-5f78dacad27f" name="Changes by tomas" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +49,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="17" />
-    <property name="settings.editor.selected.configurable" value="CodeWithMe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/learningJava" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="helloWorld" type="Application" factoryName="Application" nameIsGenerated="true">

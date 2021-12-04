@@ -74,7 +74,6 @@ public class Calculator {
      *      Dynamische Verfahren
      *      Tilgungsrechnung
      * @author tomas
-     *
      */
     public String procedureTypeQuery()
     {
