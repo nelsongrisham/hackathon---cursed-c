@@ -19,10 +19,10 @@ public class calculator {
         return interest;
     }
     
-    public double getLinearInterestAtTime(double startCapital, double , double )
+    public double getLinearInterestAtTime(double startCapital, double , double ){}
     
     //Zinsrechnung dynamische Zinsrechnung, gesucht Barwert K0
-    public double getDynamicInterest(double )
+    public double getDynamicInterest(double io){
     
 
     }
