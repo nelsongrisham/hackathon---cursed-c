@@ -15,17 +15,15 @@ public class calculator {
   
 
     //Zinsrechnung lineare Zinsrechnung, gesucht Zinsen
-    public double getLinearInterest(double captial, double interestRate, int time){
-        interest = (capital * interestRate * time)/(360 * 100);
+    public double getLinearInterest(double captial, double interestRate, int time) {
+        interest = (capital * interestRate * time) / (360 * 100);
         return interest;
     }
     
-    public double getLinearInterestAtTime(double startCapital, double , double ){}
-    
     //Zinsrechnung dynamische Zinsrechnung, gesucht Barwert K0
-    public double getDynamicInterest(double capital, double interestRate, int time){
-
-
+    public double getDynamicInterest(double capital, double q, int time){
+        interest = (capital * (1/Math.pow(q, time)));
+        return interest;
     }
 
     private  void multipleInput() {
