@@ -25,8 +25,6 @@ public class Calculator {
                 System.out.println("Error - procedureTypeQuery in switch");
                 break;
         }
-
-
     }
 
     /**
@@ -64,7 +62,7 @@ public class Calculator {
         String[] options = {"firstOption", "secondOption", "thirdOption"};
         ImageIcon icon = new ImageIcon("src/images/calculatorImage.png");
         String resultType = (String)JOptionPane.showInputDialog(null, "Was möchtest du berechnen?",
-                "Ergebnisabfrage", JOptionPane.QUESTION_MESSAGE, icon, options, options[2]);
+                "Ergebnisabfrage", JOptionPane.QUESTION_MESSAGE, icon, options, options[3]);
         System.out.println(resultType);
         return resultType;
     }
@@ -83,7 +81,7 @@ public class Calculator {
         String[] options = {"Lineare Zinsrechnung", "Dynamische Verfahren", "Tilgungsrechnung"};
         ImageIcon icon = new ImageIcon("src/images/calculatorImage.png");
         String procedureType = (String)JOptionPane.showInputDialog(null, "Um was für einen Verfahrenstypen handelt es sich?",
-                "Abfrage Verfahrenstypen", JOptionPane.QUESTION_MESSAGE, icon, options, options[2]);
+                "Abfrage Verfahrenstypen", JOptionPane.QUESTION_MESSAGE, icon, options, options[3]);
         System.out.println(procedureType);
         return procedureType;
     }
