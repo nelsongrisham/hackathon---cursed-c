@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29d0d40a-d98d-4e7e-9388-bc20f60928a5" name="Changes" comment="" />
-    <list id="fa572c7e-21ff-4bbd-b3b1-809b9073fdee" name="Changes by AlexS" comment="">
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/calculator.java" afterDir="false" />
+    <list default="true" id="29d0d40a-d98d-4e7e-9388-bc20f60928a5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FiMa_Calculator/src/LinearProcedures.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_20_49__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_20_49__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_24__Changes_by_MarleneOehlert_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_24__Changes_by_MarleneOehlert_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" afterDir="false" />
     </list>
-    <list id="912942c7-57cc-49ba-82cc-83ceca7d55da" name="Changes by MarleneOehlert" comment="" />
+    <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="">
+      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" afterDir="false" />
+    </list>
+    <list id="0630bcd2-11d9-4f08-aef7-5f78dacad27f" name="Changes by tomas" comment="">
+      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,8 +45,24 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java">
+      <ranges>
+        <range start1="2" end1="3" start2="2" end2="3" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+        <range start1="5" end1="5" start2="5" end2="7" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="6" end1="9" start2="8" end2="10" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+        <range start1="11" end1="13" start2="12" end2="27" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+        <range start1="14" end1="26" start2="28" end2="29" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+        <range start1="28" end1="29" start2="31" end2="36" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+        <range start1="50" end1="51" start2="57" end2="62" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+        <range start1="54" end1="58" start2="65" end2="69" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+        <range start1="59" end1="59" start2="70" end2="89" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectId" id="21pgZU9Rkqb7DJriPBqxiMg5qvh" />
   <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -44,7 +70,6 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="17" />
@@ -85,10 +110,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
