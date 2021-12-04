@@ -1,7 +1,7 @@
 # hackathon - cursed c
- official repo of the hackathon cursed c group
+# official repo of the hackathon cursed c group
 
 
-project ideas 
+# project ideas: 
 
 calculator for financial math-operations
