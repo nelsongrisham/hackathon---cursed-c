@@ -5,6 +5,7 @@ public class calculator {
     double capital;
     double interestRate;
     double time;
+    String resultType;
 
 
     public void main(String[] args) {
@@ -14,7 +15,7 @@ public class calculator {
   
 
     //Zinsrechnung lineare Zinsrechnung, gesucht Zinsen
-    public double getLinearInterest(double captial, double interestRate, double time){
+    public double getLinearInterest(double captial, double interestRate, int time){
         interest = (capital * interestRate * time)/(360 * 100);
         return interest;
     }
@@ -22,8 +23,8 @@ public class calculator {
     public double getLinearInterestAtTime(double startCapital, double , double ){}
     
     //Zinsrechnung dynamische Zinsrechnung, gesucht Barwert K0
-    public double getDynamicInterest(double io){
-    
+    public double getDynamicInterest(double capital, double interestRate, int time){
+
 
     }
 
