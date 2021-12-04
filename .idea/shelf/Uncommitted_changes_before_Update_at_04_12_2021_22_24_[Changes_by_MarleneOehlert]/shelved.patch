@@ -1,0 +1,25 @@
+Index: FiMa_Calculator/src/calculator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import javax.swing.*;\r\nimport javax.swing.JOptionPane;\r\n\r\npublic class calculator {\r\n    double interest;\r\n    double capital;\r\n    double interestRate;\r\n    double time;\r\n    String resultType;\r\n\r\n\r\n    public void main(String[] args) {\r\n        System.out.println(getLinearInterest(100, 5,10));\r\n        resultQuery();\r\n        multipleInput();\r\n    }\r\n\r\n  \r\n\r\n    //Zinsrechnung lineare Zinsrechnung, gesucht Zinsen\r\n    public double getLinearInterest(double captial, double interestRate, double time){\r\n        interest = (capital * interestRate * time)/(360 * 100);\r\n        return interest;\r\n    }\r\n    \r\n    //public double getLinearInterestAtTime(double startCapital, double , double )\r\n    \r\n    //Zinsrechnung dynamische Zinsrechnung, gesucht Barwert K0\r\n    public double getDynamicInterest(double endCapital, double time, double q){\r\n        interest = (endCapital * (1/Math.pow(q, time));\r\n        return interest;\r\n    }\r\n\r\n\r\n    private void multipleInput() {\r\n\t\tJTextField capitalField = new JTextField(5);\r\n\t\tJTextField interestRateField = new JTextField(5);\r\n\t\tJTextField timeField = new JTextField(5);\r\n\r\n\t\tJPanel myPanel = new JPanel();\r\n\t\tmyPanel.add(new JLabel(\"Capital:\"));\r\n\t\tmyPanel.add(capitalField);\r\n\t\tmyPanel.add(Box.createHorizontalStrut(15)); // a spacer\r\n\t\tmyPanel.add(new JLabel(\"Interest Rate:\"));\r\n\t\tmyPanel.add(interestRateField);\r\n        myPanel.add(new JLabel(\"Time (in years): \"));\r\n        myPanel.add(timeField);\r\n\r\n\t\tint result = JOptionPane.showConfirmDialog(null, myPanel,\r\n\t\t\t\t\"Please Enter three Values\", JOptionPane.OK_CANCEL_OPTION);\r\n\t\tif (result == JOptionPane.OK_OPTION) {\r\n\r\n\t\t\tcapital = Double.parseDouble(String.valueOf(capitalField));\r\n            interestRate = Double.parseDouble(String.valueOf(interestRateField));\r\n            time = Double.parseDouble(String.valueOf(timeField));\r\n\t\t}\r\n\t}\r\n\r\n    public void resultQuery()\r\n    {\r\n        String[] options = {\"firstOption\", \"secondOption\", \"thirdOption\"};\r\n        ImageIcon icon = new ImageIcon(\"src/images/calculatorImage.png\");\r\n        String n = (String)JOptionPane.showInputDialog(null, \"What du you want to calculate?\",\r\n                \"Result Query\", JOptionPane.QUESTION_MESSAGE, icon, options, options[2]);\r\n        System.out.println(n);\r\n        resultType = n;\r\n    }\r\n\r\n\r\n}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/FiMa_Calculator/src/calculator.java b/FiMa_Calculator/src/calculator.java
+--- a/FiMa_Calculator/src/calculator.java	(revision c3d89c9d2d3177b3a04aaacd61f47967f2206af9)
++++ b/FiMa_Calculator/src/calculator.java	(date 1638652987428)
+@@ -27,11 +27,13 @@
+     
+     //Zinsrechnung dynamische Zinsrechnung, gesucht Barwert K0
+     public double getDynamicInterest(double endCapital, double time, double q){
+-        interest = (endCapital * (1/Math.pow(q, time));
++        interest = (endCapital * (1/Math.pow(q, time)));
+         return interest;
+     }
+ 
+ 
++
++
+     private void multipleInput() {
+ 		JTextField capitalField = new JTextField(5);
+ 		JTextField interestRateField = new JTextField(5);

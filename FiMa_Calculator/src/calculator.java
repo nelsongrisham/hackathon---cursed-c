@@ -48,6 +48,16 @@ public class calculator {
             interestRate = Integer.parseInt(String.valueOf(zahlenZiehungField));
 		}
 	}
+
+    public void resultQuery()
+    {
+        String[] options = {"firstOption", "secondOption", "thirdOption"};
+        ImageIcon icon = new ImageIcon("src/images/calculatorImage.png");
+        String n = (String)JOptionPane.showInputDialog(null, "What du you want to calculate?",
+                "Result Query", JOptionPane.QUESTION_MESSAGE, icon, options, options[2]);
+        System.out.println(n);
+        resultType = n;
+    }
 }
 
 
