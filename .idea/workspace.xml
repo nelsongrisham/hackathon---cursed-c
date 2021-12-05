@@ -2,18 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29d0d40a-d98d-4e7e-9388-bc20f60928a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_20_49__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_20_49__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_22__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_23__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_24__Changes_by_MarleneOehlert_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_24__Changes_by_MarleneOehlert_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_26__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_30__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_30__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_32__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
     </list>
-    <list id="52f98ba4-b12a-452b-9f4f-bf2e3d245f2c" name="Changes by AlexS" comment="" />
-    <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="" />
-    <list id="0630bcd2-11d9-4f08-aef7-5f78dacad27f" name="Changes by tomas" comment="" />
+    <list id="52f98ba4-b12a-452b-9f4f-bf2e3d245f2c" name="Changes by AlexS" comment="">
+      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java" afterDir="false" />
+    </list>
+    <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="">
+      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +40,25 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java">
+      <ranges>
+        <range start1="8" end1="9" start2="8" end2="9" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+        <range start1="13" end1="15" start2="13" end2="14" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+        <range start1="18" end1="21" start2="17" end2="19" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="23" end1="24" start2="21" end2="21" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="25" end1="28" start2="22" end2="24" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="31" end1="34" start2="27" end2="29" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="37" end1="40" start2="32" end2="34" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="42" end1="43" start2="36" end2="57" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+        <range start1="44" end1="46" start2="58" end2="59" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="48" end1="52" start2="61" end2="64" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="54" end1="54" start2="66" end2="75" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="55" end1="55" start2="76" end2="89" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+        <range start1="56" end1="56" start2="90" end2="92" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -60,7 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="17" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learningJava" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/learningJava" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -96,6 +112,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638643497905</updated>
       <workItem from="1638661530714" duration="4194000" />
+      <workItem from="1638666122757" duration="1521000" />
     </task>
     <servers />
   </component>
@@ -112,7 +129,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
