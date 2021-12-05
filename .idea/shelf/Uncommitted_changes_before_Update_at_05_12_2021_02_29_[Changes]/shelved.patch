@@ -1,0 +1,270 @@
+Index: FiMa_Calculator/src/Calculator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import javax.swing.*;\r\n\r\npublic class Calculator {\r\n    double interest;\r\n    double capital;\r\n    double startCapital;\r\n    double endCapital;\r\n    double interestRate;\r\n    int time;\r\n    double timeframe;\r\n    String resultType;\r\n\r\n\r\n    public static void main(String[] args) {\r\n        //System.out.println(getLinearInterest(100, 5,10));\r\n        String resultType;\r\n        switch (procedureTypeQuery()) {\r\n            case \"Lineare Zinsrechnung\": //\r\n                LinearProcedures linearProcedures =  new LinearProcedures();\r\n                resultType = resultQuery(new String[] {\"Zinsen\", \"Zinsen nach n Jahren\", \"Kapital nach n Jahren\"});\r\n                break;\r\n            case \"Dynamische Verfahren\": //\r\n                DynamicProcedures dynamicProcedures = new DynamicProcedures();\r\n                resultType = resultQuery(new String[] {\"firstOption\", \"secondOption\", \"thirdOption\"});\r\n                break;\r\n            case \"Tilgungsrechnung\": //\r\n                RepaymentCalculation repaymentCalculation = new RepaymentCalculation();\r\n                String typeOfRepaymentCalculation = queryTypeOfRepaymentCalculation();\r\n                if (typeOfRepaymentCalculation.equals(\"Ratenschuldtilgung\"))\r\n                {\r\n                    resultType = resultQuery(new String[] {\"Tilgungsrate\", \"Restschuld\", \"Zinsen\", \"Annuität\"});\r\n                }\r\n                else\r\n                {\r\n                    resultType = resultQuery(new String[] {\"Tilgungsbetrag\", \"Zinsbetrag\", \"Restschuld\", \"Laufzeit\"});\r\n                }\r\n\r\n                break;\r\n            default:\r\n                System.out.println(\"Error - procedureTypeQuery in switch\");\r\n                break;\r\n        }\r\n    }\r\n    /**\r\n     * Eingabe über JOptionPan\r\n     */\r\n    private void multipleInput() {\r\n\t\tJTextField zahlenMaxField = new JTextField(5);\r\n\t\tJTextField zahlenZiehungField = new JTextField(5);\r\n\r\n\t\tJPanel myPanel = new JPanel();\r\n\t\tmyPanel.add(new JLabel(\"Capital:\"));\r\n\t\tmyPanel.add(zahlenMaxField);\r\n\t\tmyPanel.add(Box.createHorizontalStrut(15)); // a spacer\r\n\t\tmyPanel.add(new JLabel(\"Interest Rate:\"));\r\n\t\tmyPanel.add(zahlenZiehungField);\r\n        myPanel.add(new JLabel(\"Time (in years)::\"));\r\n        myPanel.add(zahlenZiehungField);\r\n\r\n\t\tint result = JOptionPane.showConfirmDialog(null, myPanel,\r\n\t\t\t\t\"Please Enter the two Values\", JOptionPane.OK_CANCEL_OPTION);\r\n\t\tif (result == JOptionPane.OK_OPTION) {\r\n\r\n\t\t\tcapital = Integer.parseInt(String.valueOf(zahlenMaxField));\r\n            interestRate = Integer.parseInt(String.valueOf(zahlenZiehungField));\r\n\t\t}\r\n\t}\r\n\r\n    /**\r\n     * Userabfrage, bei der erfragt wird, was berechnet werden soll.\r\n     */\r\n    public static String resultQuery(String[] options)\r\n    {\r\n        ImageIcon icon = new ImageIcon(\"src/images/calculatorImage.png\");\r\n        String resultType = (String)JOptionPane.showInputDialog(null, \"Was möchtest du berechnen?\",\r\n                \"Ergebnisabfrage\", JOptionPane.QUESTION_MESSAGE, icon, options, options[1]);\r\n        System.out.println(resultType);\r\n        return resultType;\r\n    }\r\n\r\n    /**\r\n     * Erste Userabfrage, bei der erfragt wird, um welchen Aufgabentyp es sich handelt.\r\n     * Mögliche Eingaben:\r\n     *      Lineare Zinsrechnung\r\n     *      Dynamische Verfahren\r\n     *      Tilgungsrechnung\r\n     */\r\n    public static String procedureTypeQuery()\r\n    {\r\n        String[] options = {\"Lineare Zinsrechnung\", \"Dynamische Verfahren\", \"Tilgungsrechnung\"};\r\n        ImageIcon icon = new ImageIcon(\"src/images/calculatorImage.png\");\r\n        String procedureType = (String)JOptionPane.showInputDialog(null, \"Um was für einen Verfahrenstypen handelt es sich?\",\r\n                \"Abfrage Verfahrenstypen\", JOptionPane.QUESTION_MESSAGE, icon, options, options[1]);\r\n        System.out.println(procedureType);\r\n        return procedureType;\r\n    }\r\n\r\n    public static String interestWarp(){\r\n        String[] options = {\"Vorschüssig\",\"Nachschüssig\"};\r\n        ImageIcon icon = new ImageIcon(\"src/images/calculatorImage.png\");\r\n        String InterestWarp = (String)JOptionPane.showInputDialog(null, \"Möchtest du vorschüssige oder nachschüssige Werte berechnen?\",\r\n                \"Abfrage Verfahrenstypen\", JOptionPane.QUESTION_MESSAGE, icon, options, options[1]);\r\n        System.out.println(InterestWarp);\r\n        return InterestWarp;\r\n    }\r\n\r\n    public static String queryTypeOfRepaymentCalculation(){\r\n        String[] options = {\"Ratenschuldtilgung\",\"Annuitaetentilgung\"};\r\n        ImageIcon icon = new ImageIcon(\"src/images/calculatorImage.png\");\r\n        String typeOfRepaymentCalculation = (String)JOptionPane.showInputDialog(null, \"Was für eine Art von Tilgungsrechnung möchtest du vornehmen?\",\r\n                \"Abfrage des Type der Tilgungsrechnung\", JOptionPane.QUESTION_MESSAGE, icon, options, options[0]);\r\n        System.out.println(typeOfRepaymentCalculation);\r\n        return typeOfRepaymentCalculation;\r\n    }\r\n}\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/FiMa_Calculator/src/Calculator.java b/FiMa_Calculator/src/Calculator.java
+--- a/FiMa_Calculator/src/Calculator.java	(revision 9e4776668677ec4ab349f562bd4de2d1d7999c09)
++++ b/FiMa_Calculator/src/Calculator.java	(date 1638667736242)
+@@ -16,63 +16,90 @@
+         String resultType;
+         switch (procedureTypeQuery()) {
+             case "Lineare Zinsrechnung": //
+-                LinearProcedures linearProcedures =  new LinearProcedures();
+-                resultType = resultQuery(new String[] {"Zinsen", "Zinsen nach n Jahren", "Kapital nach n Jahren"});
++                LinearProcedures linearProcedures = new LinearProcedures();
++                resultType = resultQuery(new String[]{
++                        "Zinsen",
++                        "Zinsen nach n Jahren",
++                        "Kapital nach n Jahren"});
+                 break;
+             case "Dynamische Verfahren": //
+                 DynamicProcedures dynamicProcedures = new DynamicProcedures();
+-                resultType = resultQuery(new String[] {"firstOption", "secondOption", "thirdOption"});
++                resultType = resultQuery(new String[]{
++                        "Barwert K_0 mit K_n berechnen",
++                        "Barwert K_0 mit A berechnen",
++                        "Endwert K_n mit K_0 berechnen",
++                        "Endwert K_n mit A berechnen",
++                        "Annuitaet A mit 0 berechnen",
++                        "Annuitaet A mit K_n berechnen",
++                        "Laufzeit n mit K_n und K_0 berechnen",
++                        "Laufzeit n mit K_n und A berechnen",
++                        "Laufzeit n mit K_0 und A berechnen",
++                        "Zinssatz q mit K_n und K_0 berechnen",
++                        "Zinssatz p mit K_n und K_0 berechnen",
++                        "Regula falsi berechnen",
++                        "pq-Formel",
++                        "Ewige Rente - K_0 berechnen",
++                        "Unterjährige Verzinsung (zeitproportional): Effektivzinssatz der unterjährigen Zinsperiode i_v berechnen",
++                        "Unterjährige Verzinsung (zeitproportional): Effektiven Jahreszinssatz berechnen i_eff",
++                        "Unterjährige Verzinsung (zeitproportional): Endwert K_n berechnen",
++                        "Stetige Verzinsung - Endwert berechnen",
++                        "Effektiven Zinssatz p_eff berechnen",
++                        "Konformen Periodenzins i_konf berechnen"});
+                 break;
+             case "Tilgungsrechnung": //
+                 RepaymentCalculation repaymentCalculation = new RepaymentCalculation();
+                 String typeOfRepaymentCalculation = queryTypeOfRepaymentCalculation();
+-                if (typeOfRepaymentCalculation.equals("Ratenschuldtilgung"))
+-                {
+-                    resultType = resultQuery(new String[] {"Tilgungsrate", "Restschuld", "Zinsen", "Annuität"});
++                if (typeOfRepaymentCalculation.equals("Ratenschuldtilgung")) {
++                    resultType = resultQuery(new String[]{
++                            "Tilgungsrate",
++                            "Restschuld",
++                            "Zinsen",
++                            "Annuität"});
++                } else {
++                    resultType = resultQuery(new String[]{
++                            "Tilgungsbetrag",
++                            "Zinsbetrag",
++                            "Restschuld",
++                            "Laufzeit"});
+                 }
+-                else
+-                {
+-                    resultType = resultQuery(new String[] {"Tilgungsbetrag", "Zinsbetrag", "Restschuld", "Laufzeit"});
+-                }
+-
+                 break;
+             default:
+                 System.out.println("Error - procedureTypeQuery in switch");
+                 break;
+         }
+     }
++
+     /**
+      * Eingabe über JOptionPan
+      */
+     private void multipleInput() {
+-		JTextField zahlenMaxField = new JTextField(5);
+-		JTextField zahlenZiehungField = new JTextField(5);
++        JTextField zahlenMaxField = new JTextField(5);
++        JTextField zahlenZiehungField = new JTextField(5);
+ 
+-		JPanel myPanel = new JPanel();
+-		myPanel.add(new JLabel("Capital:"));
+-		myPanel.add(zahlenMaxField);
+-		myPanel.add(Box.createHorizontalStrut(15)); // a spacer
+-		myPanel.add(new JLabel("Interest Rate:"));
+-		myPanel.add(zahlenZiehungField);
++        JPanel myPanel = new JPanel();
++        myPanel.add(new JLabel("Capital:"));
++        myPanel.add(zahlenMaxField);
++        myPanel.add(Box.createHorizontalStrut(15)); // a spacer
++        myPanel.add(new JLabel("Interest Rate:"));
++        myPanel.add(zahlenZiehungField);
+         myPanel.add(new JLabel("Time (in years)::"));
+         myPanel.add(zahlenZiehungField);
+ 
+-		int result = JOptionPane.showConfirmDialog(null, myPanel,
+-				"Please Enter the two Values", JOptionPane.OK_CANCEL_OPTION);
+-		if (result == JOptionPane.OK_OPTION) {
++        int result = JOptionPane.showConfirmDialog(null, myPanel,
++                "Please Enter the two Values", JOptionPane.OK_CANCEL_OPTION);
++        if (result == JOptionPane.OK_OPTION) {
+ 
+-			capital = Integer.parseInt(String.valueOf(zahlenMaxField));
++            capital = Integer.parseInt(String.valueOf(zahlenMaxField));
+             interestRate = Integer.parseInt(String.valueOf(zahlenZiehungField));
+-		}
+-	}
++        }
++    }
+ 
+     /**
+      * Userabfrage, bei der erfragt wird, was berechnet werden soll.
+      */
+-    public static String resultQuery(String[] options)
+-    {
++    public static String resultQuery(String[] options) {
+         ImageIcon icon = new ImageIcon("src/images/calculatorImage.png");
+-        String resultType = (String)JOptionPane.showInputDialog(null, "Was möchtest du berechnen?",
++        String resultType = (String) JOptionPane.showInputDialog(null, "Was möchtest du berechnen?",
+                 "Ergebnisabfrage", JOptionPane.QUESTION_MESSAGE, icon, options, options[1]);
+         System.out.println(resultType);
+         return resultType;
+@@ -81,33 +108,32 @@
+     /**
+      * Erste Userabfrage, bei der erfragt wird, um welchen Aufgabentyp es sich handelt.
+      * Mögliche Eingaben:
+-     *      Lineare Zinsrechnung
+-     *      Dynamische Verfahren
+-     *      Tilgungsrechnung
++     * Lineare Zinsrechnung
++     * Dynamische Verfahren
++     * Tilgungsrechnung
+      */
+-    public static String procedureTypeQuery()
+-    {
++    public static String procedureTypeQuery() {
+         String[] options = {"Lineare Zinsrechnung", "Dynamische Verfahren", "Tilgungsrechnung"};
+         ImageIcon icon = new ImageIcon("src/images/calculatorImage.png");
+-        String procedureType = (String)JOptionPane.showInputDialog(null, "Um was für einen Verfahrenstypen handelt es sich?",
++        String procedureType = (String) JOptionPane.showInputDialog(null, "Um was für einen Verfahrenstypen handelt es sich?",
+                 "Abfrage Verfahrenstypen", JOptionPane.QUESTION_MESSAGE, icon, options, options[1]);
+         System.out.println(procedureType);
+         return procedureType;
+     }
+ 
+-    public static String interestWarp(){
+-        String[] options = {"Vorschüssig","Nachschüssig"};
++    public static String interestWarp() {
++        String[] options = {"Vorschüssig", "Nachschüssig"};
+         ImageIcon icon = new ImageIcon("src/images/calculatorImage.png");
+-        String InterestWarp = (String)JOptionPane.showInputDialog(null, "Möchtest du vorschüssige oder nachschüssige Werte berechnen?",
++        String InterestWarp = (String) JOptionPane.showInputDialog(null, "Möchtest du vorschüssige oder nachschüssige Werte berechnen?",
+                 "Abfrage Verfahrenstypen", JOptionPane.QUESTION_MESSAGE, icon, options, options[1]);
+         System.out.println(InterestWarp);
+         return InterestWarp;
+     }
+ 
+-    public static String queryTypeOfRepaymentCalculation(){
+-        String[] options = {"Ratenschuldtilgung","Annuitaetentilgung"};
++    public static String queryTypeOfRepaymentCalculation() {
++        String[] options = {"Ratenschuldtilgung", "Annuitaetentilgung"};
+         ImageIcon icon = new ImageIcon("src/images/calculatorImage.png");
+-        String typeOfRepaymentCalculation = (String)JOptionPane.showInputDialog(null, "Was für eine Art von Tilgungsrechnung möchtest du vornehmen?",
++        String typeOfRepaymentCalculation = (String) JOptionPane.showInputDialog(null, "Was für eine Art von Tilgungsrechnung möchtest du vornehmen?",
+                 "Abfrage des Type der Tilgungsrechnung", JOptionPane.QUESTION_MESSAGE, icon, options, options[0]);
+         System.out.println(typeOfRepaymentCalculation);
+         return typeOfRepaymentCalculation;
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"29d0d40a-d98d-4e7e-9388-bc20f60928a5\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/FiMa_Calculator/FiMa_Calculator.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/FiMa_Calculator/FiMa_Calculator.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/FiMa_Calculator/src/LinearProcedures.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/FiMa_Calculator/src/LinearProcedures.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"52f98ba4-b12a-452b-9f4f-bf2e3d245f2c\" name=\"Changes by AlexS\" comment=\"\" />\r\n    <list id=\"f7038ff7-f198-470d-b615-b071e4565274\" name=\"Changes by MarleneOehlert\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java\" afterDir=\"false\" />\r\n    </list>\r\n    <list id=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" name=\"Changes by tomas\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--tags\" />\r\n        <option name=\"title\" value=\"All\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"LineStatusTrackerManager\">\r\n    <file path=\"$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java\">\r\n      <ranges>\r\n        <range start1=\"10\" end1=\"10\" start2=\"10\" end2=\"12\" changelist=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" />\r\n        <range start1=\"11\" end1=\"12\" start2=\"13\" end2=\"14\" changelist=\"29d0d40a-d98d-4e7e-9388-bc20f60928a5\" />\r\n        <range start1=\"13\" end1=\"13\" start2=\"15\" end2=\"16\" changelist=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" />\r\n        <range start1=\"16\" end1=\"16\" start2=\"19\" end2=\"20\" changelist=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" />\r\n        <range start1=\"19\" end1=\"19\" start2=\"23\" end2=\"24\" changelist=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" />\r\n        <range start1=\"22\" end1=\"22\" start2=\"27\" end2=\"37\" changelist=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" />\r\n        <range start1=\"28\" end1=\"29\" start2=\"43\" end2=\"43\" changelist=\"29d0d40a-d98d-4e7e-9388-bc20f60928a5\" />\r\n        <range start1=\"30\" end1=\"32\" start2=\"44\" end2=\"45\" changelist=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" />\r\n        <range start1=\"57\" end1=\"58\" start2=\"70\" end2=\"70\" changelist=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" />\r\n        <range start1=\"59\" end1=\"60\" start2=\"71\" end2=\"72\" changelist=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" />\r\n        <range start1=\"61\" end1=\"62\" start2=\"73\" end2=\"73\" changelist=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" />\r\n        <range start1=\"64\" end1=\"65\" start2=\"75\" end2=\"76\" changelist=\"29d0d40a-d98d-4e7e-9388-bc20f60928a5\" />\r\n        <range start1=\"75\" end1=\"76\" start2=\"86\" end2=\"86\" changelist=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" />\r\n        <range start1=\"77\" end1=\"78\" start2=\"87\" end2=\"88\" changelist=\"0630bcd2-11d9-4f08-aef7-5f78dacad27f\" />\r\n        <range start1=\"82\" end1=\"83\" start2=\"92\" end2=\"93\" changelist=\"29d0d40a-d98d-4e7e-9388-bc20f60928a5\" />\r\n        <range start1=\"86\" end1=\"86\" start2=\"96\" end2=\"114\" changelist=\"29d0d40a-d98d-4e7e-9388-bc20f60928a5\" />\r\n      </ranges>\r\n    </file>\r\n    <file path=\"$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java\">\r\n      <ranges>\r\n        <range start1=\"1\" end1=\"2\" start2=\"1\" end2=\"2\" changelist=\"f7038ff7-f198-470d-b615-b071e4565274\" />\r\n        <range start1=\"4\" end1=\"4\" start2=\"4\" end2=\"8\" changelist=\"f7038ff7-f198-470d-b615-b071e4565274\" />\r\n        <range start1=\"5\" end1=\"6\" start2=\"9\" end2=\"10\" changelist=\"29d0d40a-d98d-4e7e-9388-bc20f60928a5\" />\r\n        <range start1=\"8\" end1=\"12\" start2=\"12\" end2=\"16\" changelist=\"f7038ff7-f198-470d-b615-b071e4565274\" />\r\n        <range start1=\"13\" end1=\"16\" start2=\"17\" end2=\"33\" changelist=\"f7038ff7-f198-470d-b615-b071e4565274\" />\r\n        <range start1=\"18\" end1=\"18\" start2=\"35\" end2=\"49\" changelist=\"f7038ff7-f198-470d-b615-b071e4565274\" />\r\n      </ranges>\r\n    </file>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"21pgZU9Rkqb7DJriPBqxiMg5qvh\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <OptionsSetting value=\"false\" id=\"Update\" />\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"jdk.selected.JAVA_MODULE\" value=\"17\" />\r\n    <property name=\"last_opened_file_path\" value=\"$USER_HOME$/IdeaProjects/learningJava\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Application.Calculator\">\r\n    <configuration name=\"Calculator\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Calculator\" />\r\n      <module name=\"FiMa_Calculator\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"helloWorld\" type=\"Application\" factoryName=\"Application\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"helloWorld\" />\r\n      <module name=\"helloWorld\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.Calculator\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"29d0d40a-d98d-4e7e-9388-bc20f60928a5\" name=\"Changes\" comment=\"\" />\r\n      <created>1638643497905</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1638643497905</updated>\r\n      <workItem from=\"1638661530714\" duration=\"3321000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <breakpoint enabled=\"true\" type=\"java-exception\">\r\n          <properties class=\"java.lang.ArrayIndexOutOfBoundsException\" package=\"java.lang\" />\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 9e4776668677ec4ab349f562bd4de2d1d7999c09)
++++ b/.idea/workspace.xml	(date 1638666736851)
+@@ -2,20 +2,19 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="29d0d40a-d98d-4e7e-9388-bc20f60928a5" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_20_49__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_20_49__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_22__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_22__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_23__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_23__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_24__Changes_by_MarleneOehlert_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_24__Changes_by_MarleneOehlert_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_26__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_30__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_30__Changes_.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_04_12_2021_22_32__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/FiMa_Calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/FiMa_Calculator.iml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/LinearProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/LinearProcedures.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java" afterDir="false" />
+     </list>
+     <list id="52f98ba4-b12a-452b-9f4f-bf2e3d245f2c" name="Changes by AlexS" comment="" />
+-    <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="">
+-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
+-    </list>
+-    <list id="0630bcd2-11d9-4f08-aef7-5f78dacad27f" name="Changes by tomas" comment="">
+-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" afterDir="false" />
+-    </list>
++    <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="" />
++    <list id="0630bcd2-11d9-4f08-aef7-5f78dacad27f" name="Changes by tomas" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -45,38 +44,6 @@
+       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+     </file-type-list>
+   </component>
+-  <component name="LineStatusTrackerManager">
+-    <file path="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java">
+-      <ranges>
+-        <range start1="10" end1="10" start2="10" end2="12" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+-        <range start1="11" end1="12" start2="13" end2="14" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+-        <range start1="13" end1="13" start2="15" end2="16" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+-        <range start1="16" end1="16" start2="19" end2="20" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+-        <range start1="19" end1="19" start2="23" end2="24" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+-        <range start1="22" end1="22" start2="27" end2="37" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+-        <range start1="28" end1="29" start2="43" end2="43" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+-        <range start1="30" end1="32" start2="44" end2="45" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+-        <range start1="57" end1="58" start2="70" end2="70" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+-        <range start1="59" end1="60" start2="71" end2="72" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+-        <range start1="61" end1="62" start2="73" end2="73" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+-        <range start1="64" end1="65" start2="75" end2="76" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+-        <range start1="75" end1="76" start2="86" end2="86" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+-        <range start1="77" end1="78" start2="87" end2="88" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
+-        <range start1="82" end1="83" start2="92" end2="93" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+-        <range start1="86" end1="86" start2="96" end2="114" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+-      </ranges>
+-    </file>
+-    <file path="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java">
+-      <ranges>
+-        <range start1="1" end1="2" start2="1" end2="2" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+-        <range start1="4" end1="4" start2="4" end2="8" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+-        <range start1="5" end1="6" start2="9" end2="10" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+-        <range start1="8" end1="12" start2="12" end2="16" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+-        <range start1="13" end1="16" start2="17" end2="33" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+-        <range start1="18" end1="18" start2="35" end2="49" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+-      </ranges>
+-    </file>
+-  </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+@@ -94,7 +61,7 @@
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="jdk.selected.JAVA_MODULE" value="17" />
+-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/learningJava" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learningJava" />
+     <property name="project.structure.last.edited" value="Modules" />
+     <property name="project.structure.proportion" value="0.0" />
+     <property name="project.structure.side.proportion" value="0.0" />
+@@ -146,6 +113,7 @@
+         </entry>
+       </map>
+     </option>
++    <option name="oldMeFiltersMigrated" value="true" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
