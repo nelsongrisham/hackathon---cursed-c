@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29d0d40a-d98d-4e7e-9388-bc20f60928a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_12_2021_01_46__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_12_2021_01_46__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_12_2021_02_29__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_05_12_2021_02_29__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
     </list>
-    <list id="52f98ba4-b12a-452b-9f4f-bf2e3d245f2c" name="Changes by AlexS" comment="">
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/LinearProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/LinearProcedures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java" afterDir="false" />
-    </list>
+    <list id="52f98ba4-b12a-452b-9f4f-bf2e3d245f2c" name="Changes by AlexS" comment="" />
     <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,17 +34,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java">
-      <ranges>
-        <range start1="48" end1="49" start2="48" end2="49" changelist="52f98ba4-b12a-452b-9f4f-bf2e3d245f2c" />
-        <range start1="80" end1="81" start2="80" end2="80" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="83" end1="84" start2="82" end2="84" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="85" end1="85" start2="85" end2="86" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="86" end1="88" start2="87" end2="88" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />

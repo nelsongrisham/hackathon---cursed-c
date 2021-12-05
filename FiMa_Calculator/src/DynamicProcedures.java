@@ -1,6 +1,12 @@
 public class DynamicProcedures {
 
-
+    /**
+     *
+     *
+     * @param args
+     * @TODO Regula falsi ergänzen? Wie fügen wir die unterjährige Verzinsung (zeitproportional) hinzu (iv, ieff, inom)?
+     * @TODO Gleiches Problem für (e^i, peff, ikonf)
+     */
     public static void main(String[] args){
 
     }
@@ -78,15 +84,38 @@ public class DynamicProcedures {
     public double getDynamicInterest(double interestRate){
         return interestRate*100;
     }
+    //gesucht Regula falsi, gegeben r
 
-    //Ewige Rente
-    public double get
-    //Unterjährige Verzinsung (zeitproportional)
+    //gesucht X1,X2, gegeben p/q-Formel
 
-    //Stetige Verzinsung
-
-    //konformer Periodenzins
-
+    //gesucht ewige Rente, gegeben K0
+    public double getUnlimitedPension(double annuity, double interestRate){
+        return annuity / interestRate;
+    }
+    //gesucht Unterjährige Verzinsung (zeitproportional), gegeben iv
+    public double getSteadyInterest(){
+        return
+    }
+    //gesucht Unterjährige Verzinsung (zeitproportional), gegeben ieff
+    public double getSteadyInterest(){
+        return
+    }
+    //gesucht Unterjährige Verzinsung (zeitproportional), gegeben Kn
+    public double getSteadyInterest(){
+        return
+    }
+    //gesucht Stetige Verzinsung, gegeben K0
+    public double getSteadyInterest(){
+        return
+    }
+    //gesucht Stetige Verzinsung, gegeben Peff
+    public double getSteadyInterest(){
+        return
+    }
+    //konformer Periodenzins, gegeben ikonf
+    public double getSteadyInterest(){
+        return
+    }
 }
 
 

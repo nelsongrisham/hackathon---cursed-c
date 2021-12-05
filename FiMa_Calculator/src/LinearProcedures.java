@@ -1,11 +1,9 @@
 public class LinearProcedures {
-    double interest;
-    double capital;
-    double startCapital;
-    double endCapital;
-    double interestRate;
-    int time;
-    double timeframe;
+    /**
+     *
+     * @param args
+     * @TODO Methoden unabhängig von Klassenvariable schreiben
+     */
 
     public static void main(String[] args){
 

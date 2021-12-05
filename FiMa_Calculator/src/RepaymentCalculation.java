@@ -32,7 +32,7 @@ public class RepaymentCalculation {
         return startCapital * Math.pow(interestRate + 1, timepast) - Annuity * (Math.pow(interestRate + 1, timepast) - 1) / (interestRate - 1);
     }
 
-    public double gutRuntime(double Annuity, double firstRepayment, double interestRate){
+    public double getRuntime(double Annuity, double firstRepayment, double interestRate){
         return (Math.log(Annuity)-Math.log(firstRepayment))/Math.log(interestRate+1);
     }
 }
