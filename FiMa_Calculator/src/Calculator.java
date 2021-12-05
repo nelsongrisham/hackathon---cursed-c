@@ -8,28 +8,41 @@ public class Calculator {
     double interestRate;
     int time;
     double timeframe;
+    String resultType;
 
-    public void main(String[] args) {
+
+    public static void main(String[] args) {
         //System.out.println(getLinearInterest(100, 5,10));
+        String resultType;
         switch (procedureTypeQuery()) {
             case "Lineare Zinsrechnung": //
                 LinearProcedures linearProcedures =  new LinearProcedures();
+                resultType = resultQuery(new String[] {"Zinsen", "Zinsen nach n Jahren", "Kapital nach n Jahren"});
                 break;
             case "Dynamische Verfahren": //
                 DynamicProcedures dynamicProcedures = new DynamicProcedures();
+                resultType = resultQuery(new String[] {"firstOption", "secondOption", "thirdOption"});
                 break;
             case "Tilgungsrechnung": //
                 RepaymentCalculation repaymentCalculation = new RepaymentCalculation();
+                String typeOfRepaymentCalculation = queryTypeOfRepaymentCalculation();
+                if (typeOfRepaymentCalculation.equals("Ratenschuldtilgung"))
+                {
+                    resultType = resultQuery(new String[] {"Tilgungsrate", "Restschuld", "Zinsen", "Annuität"});
+                }
+                else
+                {
+                    resultType = resultQuery(new String[] {"Tilgungsbetrag", "Zinsbetrag", "Restschuld", "Laufzeit"});
+                }
+
                 break;
             default:
                 System.out.println("Error - procedureTypeQuery in switch");
                 break;
         }
     }
-
     /**
-     * Eingabe über JOptionPane
-     * @author tomas
+     * Eingabe über JOptionPan
      */
     private void multipleInput() {
 		JTextField zahlenMaxField = new JTextField(5);
@@ -55,14 +68,12 @@ public class Calculator {
 
     /**
      * Userabfrage, bei der erfragt wird, was berechnet werden soll.
-     * @author tomas
      */
-    public String resultQuery()
+    public static String resultQuery(String[] options)
     {
-        String[] options = {"firstOption", "secondOption", "thirdOption"};
         ImageIcon icon = new ImageIcon("src/images/calculatorImage.png");
         String resultType = (String)JOptionPane.showInputDialog(null, "Was möchtest du berechnen?",
-                "Ergebnisabfrage", JOptionPane.QUESTION_MESSAGE, icon, options, options[3]);
+                "Ergebnisabfrage", JOptionPane.QUESTION_MESSAGE, icon, options, options[1]);
         System.out.println(resultType);
         return resultType;
     }
@@ -73,16 +84,33 @@ public class Calculator {
      *      Lineare Zinsrechnung
      *      Dynamische Verfahren
      *      Tilgungsrechnung
-     * @author tomas
      */
-    public String procedureTypeQuery()
+    public static String procedureTypeQuery()
     {
         String[] options = {"Lineare Zinsrechnung", "Dynamische Verfahren", "Tilgungsrechnung"};
         ImageIcon icon = new ImageIcon("src/images/calculatorImage.png");
         String procedureType = (String)JOptionPane.showInputDialog(null, "Um was für einen Verfahrenstypen handelt es sich?",
-                "Abfrage Verfahrenstypen", JOptionPane.QUESTION_MESSAGE, icon, options, options[3]);
+                "Abfrage Verfahrenstypen", JOptionPane.QUESTION_MESSAGE, icon, options, options[1]);
         System.out.println(procedureType);
         return procedureType;
+    }
+
+    public static String interestWarp(){
+        String[] options = {"Vorschüssig","Nachschüssig"};
+        ImageIcon icon = new ImageIcon("src/images/calculatorImage.png");
+        String InterestWarp = (String)JOptionPane.showInputDialog(null, "Möchtest du vorschüssige oder nachschüssige Werte berechnen?",
+                "Abfrage Verfahrenstypen", JOptionPane.QUESTION_MESSAGE, icon, options, options[1]);
+        System.out.println(InterestWarp);
+        return InterestWarp;
+    }
+
+    public static String queryTypeOfRepaymentCalculation(){
+        String[] options = {"Ratenschuldtilgung","Annuitaetentilgung"};
+        ImageIcon icon = new ImageIcon("src/images/calculatorImage.png");
+        String typeOfRepaymentCalculation = (String)JOptionPane.showInputDialog(null, "Was für eine Art von Tilgungsrechnung möchtest du vornehmen?",
+                "Abfrage des Type der Tilgungsrechnung", JOptionPane.QUESTION_MESSAGE, icon, options, options[0]);
+        System.out.println(typeOfRepaymentCalculation);
+        return typeOfRepaymentCalculation;
     }
 }
 
