@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29d0d40a-d98d-4e7e-9388-bc20f60928a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
     </list>
-    <list id="52f98ba4-b12a-452b-9f4f-bf2e3d245f2c" name="Changes by AlexS" comment="">
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java" afterDir="false" />
-    </list>
-    <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="">
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
-    </list>
+    <list id="52f98ba4-b12a-452b-9f4f-bf2e3d245f2c" name="Changes by AlexS" comment="" />
+    <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,25 +34,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java">
-      <ranges>
-        <range start1="8" end1="9" start2="8" end2="9" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="13" end1="15" start2="13" end2="14" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="18" end1="21" start2="17" end2="19" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="23" end1="24" start2="21" end2="21" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="25" end1="28" start2="22" end2="24" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="31" end1="34" start2="27" end2="29" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="37" end1="40" start2="32" end2="34" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="42" end1="43" start2="36" end2="57" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="44" end1="46" start2="58" end2="59" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="48" end1="52" start2="61" end2="64" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="54" end1="54" start2="66" end2="75" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="55" end1="55" start2="76" end2="89" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="56" end1="56" start2="90" end2="92" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -112,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1638643497905</updated>
       <workItem from="1638661530714" duration="4194000" />
-      <workItem from="1638666122757" duration="1521000" />
+      <workItem from="1638666122757" duration="1876000" />
     </task>
     <servers />
   </component>
