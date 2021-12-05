@@ -139,5 +139,3 @@ public class Calculator {
         return typeOfRepaymentCalculation;
     }
 }
-
-

@@ -46,7 +46,7 @@ public class DynamicProcedures {
 
     //gesucht A, gegeben Kn vorschüssig
     public double getDynamicAnnuityEndCapitalForwards(double endCapital, double interestRate, int time){
-        return endCapital * (interestRate/((Math.pow(interestRate+1,time)-1)*(interestRate+1));
+        return endCapital * (interestRate/((Math.pow(interestRate+1,time)-1)*(interestRate+1)));
     }
 
     //gesucht A, gegeben Kn nachschüssig
@@ -78,14 +78,14 @@ public class DynamicProcedures {
     public double getDynamicInterest(double interestRate){
         return interestRate*100;
     }
-    //p-q-Formel
 
     //Ewige Rente
+    public double get
+    //Unterjährige Verzinsung (zeitproportional)
 
+    //Stetige Verzinsung
 
-
-
-
+    //konformer Periodenzins
 
 }
 
