@@ -11,7 +11,13 @@ public class RepaymentCalculation {
         return startCapital * (1 - timepast / (double)numberRates);
     }
 
-    public double getInterestCharges(double startCapital, int timepast, int numberRates, double interstRate){
-        return startCapital * (1 - (timepast - 1) / (double)numberRates) * interstRate;
+    public double getInterestCharges(double startCapital, int timepast, int numberRates, double intrestRate){
+        return startCapital * (1 - (timepast - 1) / (double)numberRates) * intrestRate;
     }
+
+    public double getAnnuity(double startCapital, int timepast, int numberRates, double intrestRate){
+        return startCapital / numberRates + startCapital * (1-(timepast-1)/numberRates) * intrestRate;
+    }
+
+
 }

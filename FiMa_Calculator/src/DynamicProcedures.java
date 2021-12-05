@@ -1,38 +1,43 @@
 public class DynamicProcedures {
-    double interestRate;
-    double startCapital;
-    double endCapital;
-    double capital;
-    double annuity;
-    int time;
 
 
     public static void main(String[] args){
 
     }
-    //Zinsrechnung, gesucht Barwert K0, gegeben Kn
+    //gesucht Barwert K0, gegeben Kn
     public double getDynamicStartCapitalEndCapital(double endCapital, double interestRate, int time){
-        startCapital = (capital * (1/Math.pow(interestRate+1, time)));
-        return startCapital;
+        return (endCapitalal * (1/Math.pow(interestRate+1, time)));
+
     }
     //gesucht Barwert K0, gegeben Annuität, vorschüssig
-    public double getDynamicStartCapitalAnnuityForward(double startCapital, double interestRate, double annuity, int time){
-        double q = 1 + interestRate;
-        startCapital = annuity * (q*(Math.pow(q, time)-1))/()
-        return startCapital;
+    public double getDynamicStartCapitalAnnuityForwards(double interestRate, double annuity, int time){
+            double q = interestRate + 1;
+        return annuity * (q*(Math.pow(q, time)-1))/(Math.pow(q, time)*(interestRate))
     }
 
     //gesucht Barwert K0, gegeben Annuität, nachschüssig
-    public double getDynamicStartCapitalAnnuityAfterwards(double startCapital, double interestRate, double annuity int time){
-        startCapital = annuity * ((interestRate *(Math.pow(interestRate+1, time)-1));
+    public double getDynamicStartCapitalAnnuityAfterwards(double interestRate, double annuity int time){
+        startCapital = annuity * ((interestRate *(Math.pow(q,time)-1))/(Math.pow(q,time)*(q-1)));
         return startCapital;
     }
 
 
-    //gesucht Kn, gegeben Zinssatz, Laufzeit
-    public double getDynamicEndCapital(double startCapital, double interestRate, int time){
+    //gesucht Kn, gegeben K0
+    public double getDynamicEndCapitalStartCapital(double startCapital, double interestRate, int time){
         endCapital = startCapital * Math.pow(interestRate+1, time);
         return endCapital;
+    }
+
+    //gesucht Kn, gegeben Annuität, vorschüssig
+    public double getDynamicEndCapitalAnnuityForwards(double startCapital, double interestRate, double annuity, int time){
+        endCapital =
+        return endCapital;
+    }
+
+    //gesucht Kn, gegeben Annuität, nachschüssig
+    public double getDynamicEndCapitalAnnuityAfterwards(double startCapital, double interestRate, double annuity int time){
+        startCapital = annuity * ((interestRate *(Math.pow(q,time)-1))/(Math.pow(q,time)*(q-1)));
+        return startCapital;
     }
 
     //Zinsrechnung dynamische Zinsrechnung, gesucht q

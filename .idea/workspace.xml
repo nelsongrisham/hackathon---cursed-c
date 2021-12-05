@@ -3,18 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="29d0d40a-d98d-4e7e-9388-bc20f60928a5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/FiMa_Calculator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/FiMa_Calculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/LinearProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/LinearProcedures.java" afterDir="false" />
+    </list>
+    <list id="52f98ba4-b12a-452b-9f4f-bf2e3d245f2c" name="Changes by AlexS" comment="">
       <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/RepaymentCalculation.java" afterDir="false" />
     </list>
-    <list id="52f98ba4-b12a-452b-9f4f-bf2e3d245f2c" name="Changes by AlexS" comment="" />
     <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="">
       <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
-    </list>
-    <list id="0630bcd2-11d9-4f08-aef7-5f78dacad27f" name="Changes by tomas" comment="">
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,34 +41,15 @@
     </file-type-list>
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/FiMa_Calculator/src/Calculator.java">
-      <ranges>
-        <range start1="10" end1="10" start2="10" end2="12" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
-        <range start1="11" end1="12" start2="13" end2="14" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="13" end1="13" start2="15" end2="16" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
-        <range start1="16" end1="16" start2="19" end2="20" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
-        <range start1="19" end1="19" start2="23" end2="24" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
-        <range start1="22" end1="22" start2="27" end2="37" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
-        <range start1="28" end1="29" start2="43" end2="43" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="30" end1="32" start2="44" end2="45" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
-        <range start1="57" end1="58" start2="70" end2="70" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
-        <range start1="59" end1="60" start2="71" end2="72" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
-        <range start1="61" end1="62" start2="73" end2="73" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
-        <range start1="64" end1="65" start2="75" end2="76" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="75" end1="76" start2="86" end2="86" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
-        <range start1="77" end1="78" start2="87" end2="88" changelist="0630bcd2-11d9-4f08-aef7-5f78dacad27f" />
-        <range start1="82" end1="83" start2="92" end2="93" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="86" end1="86" start2="96" end2="114" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-      </ranges>
-    </file>
     <file path="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java">
       <ranges>
-        <range start1="1" end1="2" start2="1" end2="2" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="4" end1="4" start2="4" end2="8" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="5" end1="6" start2="9" end2="10" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
-        <range start1="8" end1="12" start2="12" end2="16" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="13" end1="16" start2="17" end2="33" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
-        <range start1="18" end1="18" start2="35" end2="49" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="1" end1="7" start2="1" end2="1" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+        <range start1="12" end1="13" start2="6" end2="7" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+        <range start1="14" end1="16" start2="8" end2="10" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+        <range start1="18" end1="22" start2="12" end2="15" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="25" end1="27" start2="18" end2="20" changelist="29d0d40a-d98d-4e7e-9388-bc20f60928a5" />
+        <range start1="31" end1="33" start2="24" end2="26" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
+        <range start1="36" end1="36" start2="29" end2="41" changelist="f7038ff7-f198-470d-b615-b071e4565274" />
       </ranges>
     </file>
   </component>
@@ -129,7 +105,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638643497905</updated>
-      <workItem from="1638661530714" duration="3321000" />
+      <workItem from="1638661530714" duration="4194000" />
     </task>
     <servers />
   </component>
