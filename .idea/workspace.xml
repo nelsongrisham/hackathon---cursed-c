@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29d0d40a-d98d-4e7e-9388-bc20f60928a5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" beforeDir="false" afterPath="$PROJECT_DIR$/FiMa_Calculator/src/DynamicProcedures.java" afterDir="false" />
-    </list>
+    <list default="true" id="29d0d40a-d98d-4e7e-9388-bc20f60928a5" name="Changes" comment="" />
     <list id="52f98ba4-b12a-452b-9f4f-bf2e3d245f2c" name="Changes by AlexS" comment="" />
     <list id="f7038ff7-f198-470d-b615-b071e4565274" name="Changes by MarleneOehlert" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +87,7 @@
       <updated>1638643497905</updated>
       <workItem from="1638661530714" duration="4194000" />
       <workItem from="1638666122757" duration="1876000" />
+      <workItem from="1638717085313" duration="76000" />
     </task>
     <servers />
   </component>
